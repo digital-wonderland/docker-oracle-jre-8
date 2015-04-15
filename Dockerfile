@@ -2,7 +2,7 @@
 
 FROM digitalwonderland/base
 
-RUN rpm --rebuilddb && curl -L -C - -b "oraclelicense=accept-securebackup-cookie" -O http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jre-8u40-linux-x64.rpm \
+RUN rpm --rebuilddb && curl -L -C - -b "oraclelicense=accept-securebackup-cookie" -O http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jre-8u45-linux-x64.rpm \
  && rpm -Uvh jre-*-linux-x64.rpm \
  && rm jre-*-linux-x64.rpm
 
